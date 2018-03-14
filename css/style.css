@@ -1,0 +1,299 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+}
+body {
+    color: #9b9b9b;
+    /* font-family: 'Work Sans', Helvetica, Arial, sans-serif; */
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    background: #0e0e0e;
+}
+a {
+    text-decoration: none;
+}
+a:active {
+    background-color: transparent;
+}
+a:hover {
+    text-decoration: none;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+.section-title h3 {
+    padding: 50px 0px;
+    font-size: 40px;
+    position: relative;
+    color: #0e0e0e;
+}
+-section-title h3:after {
+    border: 2px solid #09D361;
+    content: "";
+    display: table;
+    width:25px;
+}
+.main-part {
+    border: 20px solid #ffffff;
+    min-height: 100vh;
+}
+@media only screen and (max-width: 529px) {
+    .main-part {
+        border-width: 10px;
+    }
+}
+header {
+    position: relative;
+}
+header ._part {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    display: table;
+    clear: both;
+   
+    position: relative;
+    z-index: 9;
+}
+header ._part .left h4 {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+header ._part .left h1 {
+    font-weight: 400;
+    font-size: 40px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: #09D261;
+}
+header ._part .left p {
+    font-size: 20px;
+}
+header ._part .left ul {
+    margin-top: 30px;
+}
+header ._part .left ul li {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+}
+header ._part .left ul li a {
+    color: inherit;
+    transition: all 0.2s ease-in;
+}
+header ._part .left ul li a:hover {
+    color: #ffffff;
+}
+header .underground {
+    background: url("../img/kene.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: right 20% top 10%;
+    position: absolute;
+    background-attachment: fixed;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 2s ease-in-out;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 529px) {
+    header .underground {
+        background-position: right bottom;
+    }
+}
+.works {
+    background: #ffffff;
+    z-index: 9;
+}
+.works ._details {
+    font-size: 16px;
+}
+.works ._details h3 {
+    color: #000000;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.works ._details p {
+    color: #444444;
+}
+.works ._details span {
+    font-size: 16px;
+    display: block;
+    padding: 10px 0;
+}
+.works ._details a {
+    color: #0080FF;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in;
+}
+.works ._details a:hover {
+    color: #D34335;
+}
+.works ._details a:hover span {
+    transform: translateX(5px);
+}
+.works ._details a span {
+    transition: all 0.2s ease-in;
+    display: inline-block;
+} 
+.works .project {
+    display: table;
+    /*  */
+    margin-bottom: 70px;
+}
+.works ._image {
+    background: url(../img/browser-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 4.5%;
+    transition: all 0.2s ease-in;
+}
+.works ._image:hover {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.12);
+}
+.works ._image figure {
+    position: relative;
+}
+.works ._image img {
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-top: none;
+}
+footer {
+    padding: 60px 0;   
+}
+footer:hover ._call p span {
+    color: #1771D3;
+}
+footer ._call  {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+@media only screen and (max-width: 529px) {
+    footer ._call {
+        width: 80%;
+    }
+}
+footer ._call h3 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+@media only screen and (max-width: 529px) {
+    footer ._call h3 {
+        font-size: 25px;
+    }
+}
+footer ._call p {
+    margin-top: 20px;
+    text-transform: uppercase;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+}
+footer ._call p i {
+    margin-right: 5px;
+}
+footer ._call p span {
+    display: block;
+    color: #ffffff;
+    text-transform: none;
+    font-size: 18px;
+    transition: all 0.2s ease-in;
+}
+@media only screen and (max-width: 529px) {
+    footer ._call p span {
+        color: #1771D3;
+    }
+}
+footer ._call span:hover {
+    color: red;
+}
+footer ._social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    /* align-content: stretch;
+    justify-content: space-between; */
+    margin-top: 50px;
+}
+@media only screen and (max-width: 529px) {
+    footer ._social {
+        padding: 0 10px;
+    }
+}
+footer ._social > div {
+    flex-grow: 1;
+}
+@media only screen and (max-width: 529px) {
+    footer ._social > div {
+        width: 50%;
+        margin-bottom: 10px;
+        padding: 0 2px;
+    }
+}
+footer ._social > div.twitter i {
+    color: #55ACEE;
+} 
+footer ._social > div.twitter:hover span {
+    color: #55ACEE;
+}
+footer ._social > div.medium i {
+    color: #0BE370;
+}
+footer ._social > div.medium:hover span {
+    color: #0BE370;
+}
+footer ._social > div.instagram i {
+    color: #7A50c0;
+}
+footer ._social > div.instagram:hover span {
+    color: #7A50c0;
+}
+footer ._social > div.dribble i {
+    color: #ea4c89;
+}
+footer ._social > div.dribble:hover span {
+    color: #ea4c89;
+}
+footer ._social > div a {
+    color: inherit;
+    display: block;
+    font-size: 12px;
+}
+footer ._social > div a i {
+    font-size: 40px;
+    float: left;
+    margin-right: 10px;
+} 
+footer ._social > div a span {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    /* transition: all 0.2s ease-in; */
+    font-weight: 400;
+}
+@media only screen and (max-width: 529px) {
+    footer ._social > div a i {
+        margin-right: 5px;
+    }
+    footer ._social > div a span {
+        font-size: 14px;
+    }
+}
